@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+   <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   <![endif]-->
+<html class="no-js" lang=""> <!--<![endif]-->
+
+  <body>
+      {% include head.html %}
+      {% include nav.html %}
+
+      <div class="container-fluid" id="page">
+        <div class="row">
+          <div class="col-sm">
+            <h1><a id="top">{{ page.title }}</a></h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+
+      {% include footer.html %}
+
+      <!-- JS -->
+      <script src="{{ site.baseurl }}/assets/js/plugins/jquery.mb.YTPlayer.min.js"></script>
+      <script src="{{ site.baseurl }}/assets/js/plugins/jquery.mb.vimeo_player.min.js"></script>
+      <script src="{{ site.baseurl }}/assets/js/plugins/animate-headline.js"></script>
+      <script src="{{ site.baseurl }}/assets/js/main.js"></script>
+
+  </body>
+  </html>

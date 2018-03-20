@@ -1,0 +1,26 @@
+---
+layout: template
+title: Galleries
+---
+
+<div class="row">
+  <div class="col-2">
+    <ul>
+      <li>2018 - Events</li>
+      <li>2017 - Events</li>
+    </ul>
+  </div>
+  <div class="col-7">
+
+    {% assign sorted_gallery = site.photo_gallery | sort: 'weight' %}
+    <ul class="photo-gallery">
+      {% for image in sorted_gallery %}
+        <li>
+          <a href="{{ image.link }}">
+            <img src="{{ image.image_path }}" alt="{{ image.title }}">
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
