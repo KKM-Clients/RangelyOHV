@@ -19,8 +19,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   From UTV to 4x4's and rally cars we offer and exciting adventuer of outdoor activities for every family member.
   Come along on a UTV trail ride, become a spectator at Rally Colorado, or for more extrem fun checkout Colorado only
   rock crawl park.
-baseurl: "/RangelyOHV" # the subpath of your site, e.g. /blog
-url: "http://www.rangelyohv.com" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
