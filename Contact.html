@@ -21,30 +21,31 @@ title: Contact
 
     <p>Do you have Questions, Commints and/or Concers about an event or trail? Let us know we want to help. </p>
     <p>If you are Registering for and event plese visit
-      the <a href="{{ site.baseurl }}/Registration" title="Use the Registration form">Registration page</a>.</p>
+      the <a href="{{ site.baseurl }}/Registration" title="Use the Registration form"><strong>Registration page</strong></a>.</p>
+    <p>&nbsp;</p>
 
-    <form>
+    <form action="mailto:info@kaffeinatedkodemonkey.com" method="post">
       <div class="form-group row">
-        <label for="NAME" class="col-sm-4 col-form-label">Name:</label>
+        <label for="NAME" class="col-sm-2 col-form-label">Name:</label>
         <div class="col-sm-5">
-          <input type="text" class="form-control" id="NAME" placeholder="Full Name">
+          <input type="text" class="form-control form-control-md" id="NAME" placeholder="Full Name">
         </div>
       </div>
       <div class="form-group row">
-        <label for="EMAIL" class="col-sm-4 col-form-label">Email:</label>
+        <label for="EMAIL" class="col-sm-2 col-form-label">Email:</label>
         <div class="col-sm-5">
-          <input type="email" class="form-control" id="EMAIL" placeholder="Email">
+          <input type="email" class="form-control form-control-md" id="EMAIL" placeholder="Email Address">
         </div>
       </div>
       <div class="form-group row">
-        <label for="MESSAGE" class="col-sm-4 col-form-label">Message:</label>
+        <label for="MESSAGE" class="col-sm-2 col-form-label">Message:</label>
         <div class="col-sm-5">
-          <input type="textarea" class="form-control" id="MESSAGE">
+          <input type="textarea" class="form-control form-control-md" rows="5" id="MESSAGE">
         </div>
       </div>
       <div class="form-group row">
         <div class="col-sm-5">
-          <button type="submit" class="btn btn-primary">Sign in</button>
+          <button type="submit" class="btn btn-info">Sign in</button>
         </div>
       </div>
     </form>
