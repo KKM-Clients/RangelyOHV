@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: ROAR 1
+title: Rangley OHV Adventuer Rally
 email: info@rangelyohv.com
 description: >- # this means to ignore newlines until "baseurl:"
   From UTV to 4x4's and rally cars we offer and exciting adventuer of outdoor activities for every family member.
