@@ -13,7 +13,7 @@
 
       <div class="container-fluid" id="page">
         <div class="row">
-          <div class="col-sm">
+          <div class="col-sm-12">
             <h1><a id="top">{{ page.title }}</a></h1>
           </div>
         </div>
@@ -21,7 +21,41 @@
 
       <div class="container-fluid">
         <div class="row">
-          <div class="col-sm">
+          <div class="col-sm-2">
+            <img src="{{ site.baseurl }}/assets/images/ROAR-logo.png" class="logo">
+
+            {% if page.title == "Riding Rules" %}
+              <ul>
+                <li>Rider's Rules</li>
+                <li><a href="{{ site.baseurl }}/TrailRating" title="Trail Rating">Trail Rating</a></li>
+                <li><a href="{{ site.baseurl }}/Trails" title="Trail Information">Trails</a></li>
+              </ul>
+            {% elsif page.title == "Trail Rating" %}
+              <ul class="left-nav-ul">
+                <li><a href="{{ site.baseurl }}/Rules" title="Rules">Rider's Rules</a></li>
+                <li>Trail Rating</li>
+                <li><a href="{{ site.baseurl }}/Trails" title="Trail Information">Trails</a></li>
+              </ul>
+            {% elsif page.title == "Trails" %}
+              <ul>
+                <li><a href="{{ site.baseurl }}/Rules" title="Rules">Rider's Rules</a></li>
+                <li><a href="{{ site.baseurl }}/TrailRating" title="Trail Rating">Trail Rating</a></li>
+                <li>Trails</li>
+              </ul>
+            {% elsif page.title == "Vendors Registration" %}
+              <ul>
+                <li><a href="https://drive.google.com/open?id=1RQvhrEWgagx_1-2hbGYv9KLfpGYihLs_irBb_dbnGz4" target="_blank" title="Download Vendor Registration Form">Vendor Registration Form</a></li>
+              </ul>
+
+            {% elsif page.title == "Events" %}
+              <ul>
+                <li>Rally Schedule - Not Availible</li>
+                <li><a href="https://docs.google.com/document/d/1rwOCSCjNm7k2hD3PZV6tgF4IwTQ5RzAmExI6cRzJoCs/edit?usp=sharing" title="Download & Print copy of Schedule" target="_blank">Print ROAR Schedule</a></li>
+              </ul>
+            {% endif %}
+          </div>
+          <div class="col-10 ">
+            <p>&nbsp;</p>
             {{ content }}
           </div>
         </div>
