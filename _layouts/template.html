@@ -21,7 +21,7 @@
 
       <div class="container-fluid">
         <div class="row">
-          <div class="col-sm-">
+          <div class="col-sm-3">
             <img src="{{ site.baseurl }}/assets/images/ROAR-logo.png" class="logo">
 
             {% if page.title == "Rules & Regulations" %}
@@ -47,12 +47,17 @@
                 <li><a href="https://drive.google.com/open?id=1RQvhrEWgagx_1-2hbGYv9KLfpGYihLs_irBb_dbnGz4" target="_blank" title="Download Vendor Registration Form">Vendor Registration Form</a></li>
               </ul>
 
+              <hr />
+              {% include Sponsors.html %}
             {% elsif page.title == "Events" or page.title == "Lodging" %}
               <ul>
                 <li><a href="{{ site.baseurl }}/Lodging" title="Where To Stay">Lodging For Events</a></li>
                 <li><a href="http://rally-america.com/events" target="_blank" title="Rally Colorado - Event Schedule">Rally Colorado Event Schedule</a></li>
                 <li><a href="https://docs.google.com/document/d/1rwOCSCjNm7k2hD3PZV6tgF4IwTQ5RzAmExI6cRzJoCs/edit?usp=sharing" title="Download & Print copy of Schedule" target="_blank">ROAR Event Schedule</a> - <em>Print</em></li>
               </ul>
+              <hr />
+              {% include Sponsors.html %}
+
             {% endif %}
           </div>
           <div class="col-9">
